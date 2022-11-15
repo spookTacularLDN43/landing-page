@@ -19,5 +19,16 @@ padding: 20px 40px;
             }
         }
     }
-    
+}
+
+.hide_for_mobile {
+@include breakpoint-down(medium){
+    display: none;
+}
+}
+
+.hide_for_desktop {
+@include breakpoint-up(large){
+    display: none;
+}
 }

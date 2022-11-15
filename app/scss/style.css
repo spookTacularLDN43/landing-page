@@ -59,6 +59,7 @@ html {
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 1rem;
+  font-weight: 200;
 }
 
 a, a:visited, a:hover {
@@ -80,11 +81,13 @@ a, a:visited, a:hover {
 }
 
 button {
-  padding: 0.7rem;
+  padding: 0.7rem 1rem;
   border-radius: 10px;
   background-image: linear-gradient(to right, #3D91BD, #bdceeb);
   border: none;
   cursor: pointer;
+  color: white;
+  font-weight: 400;
 }
 
 .header {
@@ -102,5 +105,17 @@ button {
 }
 .header_menu span:not(:last-child) {
   margin-bottom: 4px;
+}
+
+@media (max-width: 63.937em) {
+  .hide_for_mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hide_for_desktop {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

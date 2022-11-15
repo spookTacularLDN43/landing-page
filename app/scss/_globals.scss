@@ -52,6 +52,7 @@ html{
 body{
     font-family: 'Public Sans', sans-serif;
     font-size: $mainFont;
+	font-weight: 200;
 }
 a, a:visited, a:hover{
     text-decoration: none;
@@ -71,9 +72,11 @@ a, a:visited, a:hover{
 }
 }
 button{
-	padding: 0.7rem;
+	padding: 0.7rem 1rem;
 	border-radius: 10px;
 	background-image: linear-gradient(to right, $logoBlue, $lightBlue);
 	border: none;
 	cursor: pointer;
+	color: white;
+	font-weight: 400;
 }
