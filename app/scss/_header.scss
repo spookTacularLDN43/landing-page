@@ -1,0 +1,23 @@
+.header{
+padding: 20px 40px;
+    &_logo{
+        img{
+            height: 5rem;
+            width: auto;
+        }
+    }
+
+    &_menu{
+        span{
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: $logoBlue;
+
+            &:not(:last-child){
+                margin-bottom: 4px;
+            }
+        }
+    }
+    
+}
