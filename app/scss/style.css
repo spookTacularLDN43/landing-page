@@ -132,9 +132,7 @@ body {
   font-family: "Public Sans", sans-serif;
   font-size: 1rem;
   font-weight: 200;
-}
-body.noscroll {
-  overflow: hidden;
+  background-color: #e1e8eb;
 }
 
 a, a:visited, a:hover {
@@ -155,18 +153,21 @@ a, a:visited, a:hover {
 }
 
 .container {
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
 }
 
 button {
-  padding: 0.7rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 10px;
-  background-image: linear-gradient(to right, #3D91BD, #bdceeb);
+  background-color: #4a7d9d;
   border: none;
   cursor: pointer;
   color: white;
   font-weight: 400;
+  font-size: 0.8rem;
+  opacity: 1;
   transition: opacity 0.5s;
+  display: inline-block;
 }
 button:hover {
   opacity: 0.7;
@@ -174,9 +175,7 @@ button:hover {
 
 .header nav {
   position: relative;
-  background-color: #fff;
-  position: -webkit-sticky;
-  position: sticky;
+  background-color: white;
 }
 .header.open .header_toggle span:first-child {
   transform: rotate(45deg);
@@ -194,7 +193,7 @@ button:hover {
   bottom: 0;
   right: 0;
   left: 0;
-  background-image: linear-gradient(#203662, transparent);
+  background-image: linear-gradient(#4a7d9d, transparent);
 }
 .header .overlay.fade-in {
   display: block;
@@ -210,7 +209,7 @@ button:hover {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #3D91BD;
+  background-color: #4a7d9d;
   transition: all 0.5s;
   transform-origin: 1.5px 1.5px;
 }
@@ -249,7 +248,7 @@ button:hover {
   left: 0;
   right: 0;
   bottom: -30px;
-  background-image: linear-gradient(to right, #3D91BD, #bdceeb);
+  background-image: linear-gradient(to right, #6e9bb3, #bdceeb);
   opacity: 0;
   transition: opacity 0.5s;
 }
@@ -270,5 +269,55 @@ button:hover {
   .hide_for_desktop {
     display: none;
   }
+}
+
+.main {
+  margin: 0 1rem 1.5rem 1rem;
+}
+@media (min-width: 64em) {
+  .main {
+    display: flex;
+    align-items: center;
+    min-height: 40rem;
+  }
+}
+.main_image {
+  background-image: url("/images/person_1rbc.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 15rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 64em) {
+  .main_image {
+    flex: 2;
+    order: 2;
+    height: 35rem;
+  }
+}
+.main_text {
+  text-align: center;
+  padding-top: 2rem;
+}
+@media (min-width: 64em) {
+  .main_text {
+    flex: 3;
+    order: 1;
+  }
+}
+.main_text h1 {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2;
+}
+.main_text p {
+  font-size: 1rem;
+  line-height: 2;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.main_button {
+  margin-top: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,9 @@
 .header{
 
     nav{
-        position: relative;
-        background-color: $white ;
-
-    }
+      position: relative;
+      background-color: white;
+   }
 &.open{
 
     .header_toggle {
@@ -49,7 +48,7 @@
             display: block;
             width: 25px;
             height: 3px;
-            background-color: $logoBlue;
+            background-color: $darkBlue;
             transition: all 0.5s;
             transform-origin: 1.5px 1.5px;
 

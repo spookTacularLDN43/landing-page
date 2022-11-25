@@ -7,7 +7,6 @@ const body = document.querySelector('.body');
 menuButton.addEventListener('click', function(){
 
     if(header.classList.contains('open')){
-        //body.classList.remove('noscroll');
         header.classList.remove('open');
         fadeElements.forEach(function(element){
             element.classList.remove('fade-in');
@@ -17,7 +16,6 @@ menuButton.addEventListener('click', function(){
         
     }
     else{
-    //body.classList.add('noscroll'); 
     header.classList.add('open');
     fadeElements.forEach(function(element){
     element.classList.add('fade-in');
