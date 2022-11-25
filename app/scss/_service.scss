@@ -1,0 +1,32 @@
+.service{
+
+    &_stages{
+    @include breakpoint-up(medium){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    }
+
+    &_item {
+        padding: 1rem;
+
+        @include breakpoint-up(large){
+            flex: 1;
+
+            
+        }
+        @include breakpoint-up(medium){
+            flex: 50%;
+
+    }
+    img{
+    width: 20%; 
+    height: auto;
+    }
+    &_title{
+
+    }
+    &_desription{
+
+    }
+}
