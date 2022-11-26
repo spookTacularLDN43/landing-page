@@ -1,37 +1,70 @@
 .service{
+    background-color: $lightGrayishBlue2;
+    padding: 4rem 0 6rem 0;
+    h2{
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    @include breakpoint-up(medium){
+        font-size: 2rem;
+    }
+}
 
     &_stages{
+    margin-top: 2rem;
     @include breakpoint-up(medium){
+        margin-top: 10rem;
         display: flex;
         flex-wrap: wrap;
     }
 }
 
     &_item {
-        padding: 3rem;
-
+        background-color: $lightGrayishBlue;
+        box-shadow: 0 0 1rem white;
+        margin: 0.7rem; 
+        padding: 1.5rem;
+        text-align: center;
+        line-height: 2;
         @include breakpoint-up(large){
             flex:1;
-         
+            text-align: center;
         }
         @include breakpoint-up(medium){
             flex:1;
+            text-align: center;
+            
         
     }
 }
-    
    &_pic {
+
     img{
         max-width: 15rem;
         max-height: 30rem;
+        transition: opacity 0.5s;
+       &:hover{
+        opacity: 0.7;
+       }
     }
    }
 
     &_title{
-
+        font-weight: 400;
+        font-size: 1rem;
+        @include breakpoint-up(medium){
+        font-size: 1.5rem;
+        margin: 2rem 0;
+        line-height: 1;
+        }
     }
     &_description{
-
+        font-size: 0.8rem;
+        @include breakpoint-up(medium){
+            font-size: 1rem;
+        line-height: 1;
+        margin: 0 0.5rem; 
+        }
     }
 
 }

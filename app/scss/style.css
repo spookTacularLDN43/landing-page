@@ -173,6 +173,12 @@ button:hover {
   opacity: 0.7;
 }
 
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 .header nav {
   position: relative;
   background-color: white;
@@ -272,7 +278,7 @@ button:hover {
 }
 
 .main {
-  margin: 0 1rem 1.5rem 1rem;
+  margin: 0 1rem 5rem 1rem;
 }
 @media (min-width: 64em) {
   .main {
@@ -321,27 +327,77 @@ button:hover {
   margin-top: 1.5rem;
 }
 
+.service {
+  background-color: #9cc6d6;
+  padding: 4rem 0 6rem 0;
+}
+.service h2 {
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+@media (min-width: 40em) {
+  .service h2 {
+    font-size: 2rem;
+  }
+}
+.service_stages {
+  margin-top: 2rem;
+}
 @media (min-width: 40em) {
   .service_stages {
+    margin-top: 10rem;
     display: flex;
     flex-wrap: wrap;
   }
 }
 .service_item {
-  padding: 3rem;
+  background-color: #e1e8eb;
+  box-shadow: 0 0 1rem white;
+  margin: 0.7rem;
+  padding: 1.5rem;
+  text-align: center;
+  line-height: 2;
 }
 @media (min-width: 64em) {
   .service_item {
     flex: 1;
+    text-align: center;
   }
 }
 @media (min-width: 40em) {
   .service_item {
     flex: 1;
+    text-align: center;
   }
 }
 .service_pic img {
   max-width: 15rem;
   max-height: 30rem;
+  transition: opacity 0.5s;
+}
+.service_pic img:hover {
+  opacity: 0.7;
+}
+.service_title {
+  font-weight: 400;
+  font-size: 1rem;
+}
+@media (min-width: 40em) {
+  .service_title {
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    line-height: 1;
+  }
+}
+.service_description {
+  font-size: 0.8rem;
+}
+@media (min-width: 40em) {
+  .service_description {
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0 0.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
