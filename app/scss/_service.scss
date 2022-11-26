@@ -5,28 +5,33 @@
         display: flex;
         flex-wrap: wrap;
     }
-    }
+}
 
     &_item {
-        padding: 1rem;
+        padding: 3rem;
 
         @include breakpoint-up(large){
-            flex: 1;
-
-            
+            flex:1;
+         
         }
         @include breakpoint-up(medium){
-            flex: 50%;
-
+            flex:1;
+        
     }
+}
+    
+   &_pic {
     img{
-    width: 20%; 
-    height: auto;
+        max-width: 15rem;
+        max-height: 30rem;
     }
+   }
+
     &_title{
 
     }
-    &_desription{
+    &_description{
 
     }
+
 }
