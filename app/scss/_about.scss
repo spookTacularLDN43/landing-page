@@ -1,42 +1,97 @@
 .about{
-font-size: 2rem;
-font-weight: 300;
-text-align: center;
-padding-top: 3rem;
+    font-size: 0.9rem;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    h2{
+        font-weight: bold;
+    }
+    @include breakpoint-up(medium){
+        font-size: 2rem;
+    }
+
     &_items{
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+        @include breakpoint-up(medium){
     display: flex;
-    min-height: 35rem;
+    min-height: 30rem; 
     align-items: center;
     justify-content: space-around;
     padding: 0 2rem;
+    font-size: 2rem;
     }
-
+}
     &_description{
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        text-align: justify;
+        @include breakpoint-up(medium){
     flex: 1;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     max-width: 20rem;
     text-align: justify;
     }
-
+    }
     &_reviews{
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        @include breakpoint-up(medium){
     flex: 1;
     font-size: 1.5rem;
     text-align: center;
     max-width: 20rem;
     }
-
+    }
     &_page{
+        margin-top: 1rem;
+        box-shadow: 0 0 1rem lightgrey;
+        padding: 1rem;
+        background-color: white;
+        @include breakpoint-up(medium){
         margin-top: 3rem;
         padding: 2rem;
-        box-shadow: 0 0 2rem grey;
+    
         text-align: center;
-        background-color: white;
+        
     }
-
+}
     &_pic {
         img{
             max-width: 15rem;
-            max-height: 30rem;
+            max-height: 25rem;
             }
     }
+    &_author{
+    font-size: 1rem;
+    margin: 1rem 0;
+    }
+    &_review{
+    font-size: 0.8rem;
+    margin: 0 auto; 
+    text-align: center;
+    max-width: 12rem;
+    }
+&_buttons{
+    margin-top: 2rem;
 }
+
+    &_prev, &_next{
+  color: $grayishBlue;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+   &:hover{
+   
+    color: $lightBlue;
+   }
+   &:active{
+    color: $grayishBlue;
+   }
+}
+}
+
+

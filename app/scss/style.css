@@ -402,40 +402,101 @@ button:hover {
 }
 
 .about {
-  font-size: 2rem;
-  font-weight: 300;
+  font-size: 0.9rem;
   text-align: center;
   padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.about h2 {
+  font-weight: bold;
+}
+@media (min-width: 40em) {
+  .about {
+    font-size: 2rem;
+  }
 }
 .about_items {
-  display: flex;
-  min-height: 35rem;
-  align-items: center;
-  justify-content: space-around;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  margin-top: 1rem;
+}
+@media (min-width: 40em) {
+  .about_items {
+    display: flex;
+    min-height: 30rem;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem;
+    font-size: 2rem;
+  }
 }
 .about_description {
-  flex: 1;
-  font-size: 1.5rem;
-  max-width: 20rem;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
   text-align: justify;
 }
+@media (min-width: 40em) {
+  .about_description {
+    flex: 1;
+    font-size: 1.2rem;
+    max-width: 20rem;
+    text-align: justify;
+  }
+}
 .about_reviews {
-  flex: 1;
-  font-size: 1.5rem;
-  text-align: center;
-  max-width: 20rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+@media (min-width: 40em) {
+  .about_reviews {
+    flex: 1;
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 20rem;
+  }
 }
 .about_page {
-  margin-top: 3rem;
-  padding: 2rem;
-  box-shadow: 0 0 2rem grey;
-  text-align: center;
+  margin-top: 1rem;
+  box-shadow: 0 0 1rem lightgrey;
+  padding: 1rem;
   background-color: white;
+}
+@media (min-width: 40em) {
+  .about_page {
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+  }
 }
 .about_pic img {
   max-width: 15rem;
-  max-height: 30rem;
-  transition: opacity 0.5s;
+  max-height: 25rem;
+}
+.about_author {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.about_review {
+  font-size: 0.8rem;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 12rem;
+}
+.about_buttons {
+  margin-top: 2rem;
+}
+.about_prev, .about_next {
+  color: #737298;
+  font-size: 1.2rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.about_prev:hover, .about_next:hover {
+  color: #bdceeb;
+}
+.about_prev:active, .about_next:active {
+  color: #737298;
 }
 /*# sourceMappingURL=style.css.map */
