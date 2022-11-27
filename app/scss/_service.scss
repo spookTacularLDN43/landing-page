@@ -18,7 +18,6 @@
         flex-wrap: wrap;
     }
 }
-
     &_item {
         background-color: $lightGrayishBlue;
         box-shadow: 0 0 1rem white;
@@ -26,19 +25,16 @@
         padding: 1.5rem;
         text-align: center;
         line-height: 2;
+        @include breakpoint-up(medium){
+            flex:40%;
+            text-align: center;
+    }
         @include breakpoint-up(large){
             flex:1;
             text-align: center;
         }
-        @include breakpoint-up(medium){
-            flex:1;
-            text-align: center;
-            
-        
-    }
 }
    &_pic {
-
     img{
         max-width: 15rem;
         max-height: 30rem;
@@ -48,7 +44,6 @@
        }
     }
    }
-
     &_title{
         font-weight: 400;
         font-size: 1rem;

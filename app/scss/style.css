@@ -359,13 +359,13 @@ button:hover {
   text-align: center;
   line-height: 2;
 }
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .service_item {
-    flex: 1;
+    flex: 40%;
     text-align: center;
   }
 }
-@media (min-width: 40em) {
+@media (min-width: 64em) {
   .service_item {
     flex: 1;
     text-align: center;
@@ -399,5 +399,43 @@ button:hover {
     line-height: 1;
     margin: 0 0.5rem;
   }
+}
+
+.about {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 3rem;
+}
+.about_items {
+  display: flex;
+  min-height: 35rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 2rem;
+}
+.about_description {
+  flex: 1;
+  font-size: 1.5rem;
+  max-width: 20rem;
+  text-align: justify;
+}
+.about_reviews {
+  flex: 1;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 20rem;
+}
+.about_page {
+  margin-top: 3rem;
+  padding: 2rem;
+  box-shadow: 0 0 2rem grey;
+  text-align: center;
+  background-color: white;
+}
+.about_pic img {
+  max-width: 15rem;
+  max-height: 30rem;
+  transition: opacity 0.5s;
 }
 /*# sourceMappingURL=style.css.map */
